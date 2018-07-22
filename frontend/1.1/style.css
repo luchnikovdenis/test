@@ -1,0 +1,23 @@
+.container{
+	width:80%;
+	margin:10px auto;
+}
+.box{
+	display: inline-block;
+	float: left;
+	height: 50px;
+	background-color: #ccc;
+	margin: 5px 2% 0px 2%;
+    width:29.333%;	
+}
+
+@media screen and (max-width: 1024px){
+	.box{
+		width:46%;
+	}
+}
+@media screen and (max-width: 768px){
+	.box{
+		width:96%;
+	}
+}

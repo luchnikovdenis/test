@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+</head>
+<body>
+<?php
+function count_angle($hour, $minute)
+    {   
+        if ($hour < 24 && $minute < 60 ) {
+	        if ($hour > 12 && $hour < 24 ) {
+		        return ($hour - 12) * 360 / 12 + $minute * 360 / 12 / 60 - $minute * 360 / 60;
+	        }
+            else {
+                return $hour * 360 / 12 + $minute * 360 / 12 / 60 - $minute * 360 / 60;
+            }
+        }
+        else {
+	        echo "В сутках 24 часа, а в часе 60 минут";
+        }
+    } 
+echo count_angle(15, 60)
+?>
+</body>
+</html>
