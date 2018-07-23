@@ -8,19 +8,14 @@
 <?php
 function count_angle($hour, $minute)
     {   
-        if ($hour < 24 && $minute < 60 ) {
-	        if ($hour > 12 && $hour < 24 ) {
-		        return ($hour - 12) * 360 / 12 + $minute * 360 / 12 / 60 - $minute * 360 / 60;
-	        }
-            else {
+        if (($hour >= 0 && $hour < 12) && ($minute >= 0 && $minute < 60 )) {
                 return $hour * 360 / 12 + $minute * 360 / 12 / 60 - $minute * 360 / 60;
             }
-        }
         else {
-	        echo "Â ñóòêàõ 24 ÷àñà, à â ÷àñå 60 ìèíóò";
+	        echo "Ğ§Ğ°ÑÑ‹ (0..11), Ğ¼Ğ¸Ğ½ÑƒÑ‚Ñ‹ (0..59)";
         }
     } 
-echo count_angle(15, 60)
+echo count_angle(3, 15);
 ?>
 </body>
 </html>

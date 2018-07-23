@@ -6,18 +6,18 @@
 </head>
 <body>
 	<form action="" method="get">
-		<input type="text" name="num1" placeholder="Введите число">
+		<input type="text" name="num1" placeholder="Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ">
 		<select name="action">
 			<option value="+">+</option>
 			<option value="-">-</option>
 			<option value="*">*</option>
 			<option value="/">/</option>
 		</select>
-		<input type="text" name="num2" placeholder="Введите число">
+		<input type="text" name="num2" placeholder="Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ">
 		<br>
-		<button name="perform">Выполнить</button>
+		<button name="perform">Р’С‹РїРѕР»РЅРёС‚СЊ</button>
 	</form>
-	<p>Ответ:</p>
+	<p>РћС‚РІРµС‚:</p>
 
 <?php
 if (isset($_GET["perform"])) {
